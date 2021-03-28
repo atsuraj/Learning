@@ -15,6 +15,7 @@ public interface UserDetails {
         User user1 = new User(1,"Kumar Suraj","CTS","Admin","Y");
         User user2 = new User(2,"Himanshu Singh","PAYTM","Normal","Y");
         User user3 = new User(3,"Ng Suraj CIG","DXC","ibps Master","Y");
+        User user5 = new User(3,"Gagan Kinger","Sarthi Digital","ibps Master","Y");
         if(userId==1){
             return user1;
         }
