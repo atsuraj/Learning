@@ -21,6 +21,10 @@ public interface UserDetails {
         }
         if(userId==2){
             return user2;
+        } if(userId==3){
+            return user3;
+        } if(userId==4){
+            return user5;
         }
         final User user4 = user;
         return user4;

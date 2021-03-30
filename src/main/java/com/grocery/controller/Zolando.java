@@ -9,21 +9,19 @@ public class Zolando {
 
     public static int solution(String s){
 
-         List<Integer> a = new ArrayList<Integer>();
-        int count = 0;
+        int maxCount = Integer.MIN_VALUE;
         for (int i = 0; i < s.length()-1; i++) {
             if(s.substring(i+2)!= null) {
-                count++;
-                a.add(Integer.parseInt(s.substring(i, i + 2)));
+                int temp = Integer.parseInt(s.substring(i, i + 2));
+                if(temp>maxCount)
+                maxCount = temp;
             }
 
         }
-        System.out.println("Count"+ count );
-        Collections.sort(a);
 
 
 
-        return Integer.parseInt(a.get(count-1).toString());
+        return maxCount;
     }
 
 
